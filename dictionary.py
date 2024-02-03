@@ -7,9 +7,9 @@ meme_dict = {
 
 print("Witaj w programie, który tłumaczy słowa używane przez wnuki, wnuczki, młodzież. \nAby dostać definicje sloganu wystarczy napisać skrót wielkimi literami!")
 
-word = input("Wpisz słowo, którego nie rozumiesz: ").upper()
-
 while True:
+    word = input("Wpisz słowo, którego nie rozumiesz: ").upper()
+    
     if word in meme_dict.keys():
         print(meme_dict[word])
     else:
@@ -17,7 +17,7 @@ while True:
     
     koniec = input("czy chcesz zakończyć działanie?(y/n)")
     
-    if koniec == "n":
+    if koniec == "y":
         break
     else:
         continue
